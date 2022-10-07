@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prueba de selectores con JavaScript</h1>
+    <ul>
+        <li><a href="http://www.google.com">La</a> </li>
+        <li><a href="http://www.google.com">prueba</a> </li>
+    </ul>
+    <ul>
+        <li> <a href="http://www.google.com">requiere</a> </li>
+        <li> <a href="http://www.google.com">boleta</a>  </li>
+    </ul>
+
+    <script>
+
+        let element = document.querySelectorAll("ul > li > a");
+            for(item of element)
+            {
+                if(item.innerHTML == "boleta"){
+                setTimeout(() => {
+                    item.click();
+                }, 12000);                
+                
+                }                                
+            }
+    </script>  
+    
+    
+</body>
+</html>
